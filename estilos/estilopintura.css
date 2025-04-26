@@ -1,0 +1,226 @@
+/* 
+ * ESTILOS PARA LA PÁGINA DE PINTURAS - INTI MUNAY
+ * ----------------------------------------------
+ * Diseño moderno con tipografía impactante y layout limpio
+ * Mantiene coherencia con la identidad visual del sitio
+ */
+
+/* ====================== */
+/* BANNER PRINCIPAL */
+/* ====================== */
+.pintura-banner {
+    /* Fondo con imagen de pinturas */
+    background-image: url('../imagenes/cabe.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: 60px; /* Compensa la navbar fija */
+    
+    /* Efecto moderno de superposición */
+    background-attachment: fixed; /* Efecto parallax */
+}
+
+/* Capa oscura semitransparente para mejor legibilidad */
+.pintura-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(211,84,0,0.3) 100%);
+}
+
+/* Contenido del banner - centrado vertical/horizontal */
+.pintura-banner .banner-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px; /* Más ancho para textos largos */
+    padding: 0 30px;
+}
+
+/* Título principal - Estilo moderno y grande */
+.pintura-banner h1 {
+    font-size: 5rem; /* 80px - Tamaño aumentado */
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    font-weight: 800; /* Grosor aumentado */
+    letter-spacing: 1px; /* Espaciado moderno */
+    font-family: 'Montserrat', sans-serif; /* Tipografía moderna (asegurarse de cargarla) */
+    text-transform: uppercase; /* Mayúsculas para impacto */
+}
+
+/* Subtítulo */
+.pintura-banner p {
+    font-size: 1.8rem; /* 28px - Tamaño aumentado */
+    line-height: 1.4;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 300;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ====================== */
+/* SECCIÓN ARTESANOS */
+/* ====================== */
+.artesanos {
+    padding: 100px 0; /* Más espacio */
+    text-align: center;
+    background-color: #fff;
+}
+
+/* Título de sección - Estilo moderno */
+.artesanos h2 {
+    font-size: 3.5rem; /* 56px - Tamaño aumentado */
+    margin-bottom: 3rem;
+    color: #d35400;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+/* Línea decorativa bajo el título */
+.artesanos h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: #d35400;
+}
+
+/* Contenedor flexible para las tarjetas */
+.artesanos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px; /* Más espacio entre tarjetas */
+}
+
+/* Tarjeta individual de artesano */
+.artesano-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 12px; /* Bordes más redondeados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Sombra más suave */
+    width: 320px; /* Ancho aumentado */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Transición suave */
+    border: 1px solid #eee; /* Borde sutil */
+}
+
+/* Efecto hover moderno */
+.artesano-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Nombre del artesano */
+.artesano-card h3 {
+    font-size: 1.8rem; /* 28px */
+    margin: 20px 0 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Descripción del artesano */
+.artesano-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+/* Foto del artesano */
+.artesano-card img {
+    width: 180px; /* Tamaño aumentado */
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #d35400; /* Borde más grueso */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ====================== */
+/* BOTÓN TRABAJOS */
+/* ====================== */
+.btn-trabajos {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #d35400;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px; /* Bordes muy redondeados */
+    font-weight: 600;
+    transition: all 0.3s;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(211, 84, 0, 0.3);
+}
+
+/* Efecto hover para el botón */
+.btn-trabajos:hover {
+    background-color: #e67e22;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(211, 84, 0, 0.4);
+}
+
+/* ====================== */
+/* DISEÑO RESPONSIVE */
+/* ====================== */
+@media (max-width: 992px) {
+    .pintura-banner h1 {
+        font-size: 4rem; /* Ajuste para tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .pintura-banner {
+        height: 50vh;
+        background-attachment: scroll; /* Desactiva parallax en móvil */
+    }
+    
+    .pintura-banner h1 {
+        font-size: 3rem; /* 48px para móvil */
+    }
+
+    .pintura-banner p {
+        font-size: 1.4rem;
+    }
+
+    .artesanos h2 {
+        font-size: 2.5rem;
+    }
+
+    .artesanos-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .artesano-card {
+        width: 85%;
+    }
+}
+
+@media (max-width: 480px) {
+    .pintura-banner h1 {
+        font-size: 2.5rem; /* 40px para móviles pequeños */
+        line-height: 1.2;
+    }
+}
