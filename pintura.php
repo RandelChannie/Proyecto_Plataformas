@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="estilos/estilopintura.css">
 </head>
 <body>
-  <!-- Barra de navegación -->
+  <!-- Barra de navegación (sin cambios) -->
   <nav class="navbar">
     <div class="navbar-container">
       <a href="pagina.php" class="logo">INTI MUNAY</a>
@@ -25,7 +25,7 @@
     </div>
   </nav>
 
-  <!-- Banner de pinturas -->
+  <!-- Banner principal (sin cambios) -->
   <section class="pintura-banner">
     <div class="banner-content">
       <h1>Pinturas INTI MUNAY</h1>
@@ -33,7 +33,7 @@
     </div>
   </section>
 
-  <!-- Sección de artesanos -->
+  <!-- Sección de artesanos (con enlaces actualizados) -->
   <section class="artesanos">
     <h2>Nuestros Artesanos</h2>
     <div class="artesanos-container">
@@ -41,27 +41,35 @@
       <div class="artesano-card">
         <img src="imagenes/art1.jpeg" alt="Artesano Juan Pérez">
         <h3>Juan Pérez</h3>
-        <p>Especialista en pintura tradicional andina con más de 20 años de experiencia.</p>
-        <a href="#" class="btn-trabajos">Ver trabajos</a>
+        <p class="especialidad">Maestro en pintura tradicional</p>
+        <div class="descripcion">
+          <p>Originario de Cusco, Juan domina técnicas ancestrales de pintura con pigmentos naturales.</p>
+        </div>
+        <a href="trabajos.php?artista=juan_perez" class="btn-trabajos">Ver trabajos</a>
       </div>
       
       <!-- Artesano 2 -->
       <div class="artesano-card">
-        <img src="imagenes/art2.jpeg" alt="Artesano Mario Acuña">
-        <h3>Mario Acuña</h3>
-        <p>Maestra en técnicas mixtas y pintura contemporánea inspirada en culturas ancestrales.</p>
-        <a href="#" class="btn-trabajos">Ver trabajos</a>
+        <img src="imagenes/artM.jpeg" alt="Artesana María González">
+        <h3>María González</h3>
+        <p class="especialidad">Experta en técnicas mixtas</p>
+        <div class="descripcion">
+          <p>Formada en la Escuela de Bellas Artes de Lima, María fusiona acrílicos, óleos y materiales reciclados.</p>
+        </div>
+        <a href="trabajos.php?artista=maria_gonzalez" class="btn-trabajos">Ver trabajos</a>
       </div>
       
       <!-- Artesano 3 -->
       <div class="artesano-card">
         <img src="imagenes/art3.jpeg" alt="Artesano Carlos Mamani">
         <h3>Carlos Mamani</h3>
-        <p>Experto en muralismo y pintura con pigmentos naturales.</p>
-        <a href="#" class="btn-trabajos">Ver trabajos</a>
+        <p class="especialidad">Muralista y paisajista</p>
+        <div class="descripcion">
+          <p>Carlos transforma espacios urbanos con murales que narran historias comunitarias.</p>
+        </div>
+        <a href="trabajos.php?artista=carlos_mamani" class="btn-trabajos">Ver trabajos</a>
       </div>
     </div>
   </section>
-
 </body>
 </html>

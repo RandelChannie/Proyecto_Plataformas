@@ -1,0 +1,83 @@
+/* ESTILOS PARA LA PÁGINA DE TRABAJOS */
+.trabajos-header {
+    background: linear-gradient(to right, #d35400, #e67e22);
+    color: white;
+    padding: 100px 0 60px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.trabajos-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.trabajos-header p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.artesano-descripcion {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+    color: #555;
+    line-height: 1.6;
+}
+
+.trabajos-gallery {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.trabajo {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.trabajo:hover {
+    transform: translateY(-5px);
+}
+
+.trabajo img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.trabajo h3 {
+    padding: 15px 15px 5px;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.trabajo p {
+    padding: 0 15px 15px;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .trabajos-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .trabajos-header p {
+        font-size: 1.2rem;
+    }
+    
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+}

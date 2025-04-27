@@ -17,7 +17,7 @@
         <li><a href="#">Textiles</a></li>
         <li><a href="pintura.php">Pinturas</a></li>
         <li><a href="#">Información</a></li>
-        <li><a href="#">Trabajos</a></li>
+        <li><a href="trabajos">Trabajos</a></li>
         <li><a href="login.php" class="login-btn">Iniciar sesión</a></li>
       </ul>
     </div>
