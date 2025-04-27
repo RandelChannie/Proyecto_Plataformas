@@ -1,10 +1,5 @@
 /* 
  * ESTILOS PARA LA PÁGINA DE PINTURAS - INTI MUNAY
- * ----------------------------------------------
- * Diseño moderno con tipografía impactante y layout limpio
- * Mantiene coherencia con la identidad visual del sitio
- */
-
 /* ====================== */
 /* BANNER PRINCIPAL */
 /* ====================== */
@@ -53,7 +48,7 @@
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
     font-weight: 800; /* Grosor aumentado */
     letter-spacing: 1px; /* Espaciado moderno */
-    font-family: 'Montserrat', sans-serif; /* Tipografía moderna (asegurarse de cargarla) */
+    font-family: 'Montserrat', sans-serif; /* Tipografía moderna */
     text-transform: uppercase; /* Mayúsculas para impacto */
 }
 
@@ -120,6 +115,8 @@
     width: 320px; /* Ancho aumentado */
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Transición suave */
     border: 1px solid #eee; /* Borde sutil */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Efecto hover moderno */
@@ -131,17 +128,35 @@
 /* Nombre del artesano */
 .artesano-card h3 {
     font-size: 1.8rem; /* 28px */
-    margin: 20px 0 10px;
+    margin: 15px 0 5px; /* Ajuste para nueva estructura */
     color: #333;
     font-weight: 600;
 }
 
-/* Descripción del artesano */
-.artesano-card p {
-    color: #666;
+/* Especialidad del artesano */
+.especialidad {
+    color: #d35400;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* Contenedor descripción */
+.descripcion {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border-left: 4px solid #d35400;
+    flex-grow: 1; /* Para que ocupe espacio disponible */
+}
+
+.descripcion p {
+    color: #555;
     line-height: 1.6;
-    margin-bottom: 25px;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin: 0;
 }
 
 /* Foto del artesano */
@@ -152,6 +167,7 @@
     object-fit: cover;
     border: 4px solid #d35400; /* Borde más grueso */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    align-self: center; /* Centrar imagen */
 }
 
 /* ====================== */
@@ -171,6 +187,7 @@
     border: none;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(211, 84, 0, 0.3);
+    margin-top: auto; /* Para fijar botón abajo */
 }
 
 /* Efecto hover para el botón */
@@ -215,6 +232,19 @@
 
     .artesano-card {
         width: 85%;
+    }
+
+    /* Ajuste responsive para descripciones */
+    .descripcion {
+        padding: 10px;
+    }
+    
+    .descripcion p {
+        font-size: 0.95rem;
+    }
+    
+    .especialidad {
+        font-size: 1.1rem;
     }
 }
 

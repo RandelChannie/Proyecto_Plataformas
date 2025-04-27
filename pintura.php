@@ -1,4 +1,3 @@
-html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -48,8 +47,8 @@ html
       
       <!-- Artesano 2 -->
       <div class="artesano-card">
-        <img src="imagenes/art2.jpeg" alt="Artesana Mario Acuña">
-        <h3>María González</h3>
+        <img src="imagenes/art2.jpeg" alt="Artesano Mario Acuña">
+        <h3>Mario Acuña</h3>
         <p>Maestra en técnicas mixtas y pintura contemporánea inspirada en culturas ancestrales.</p>
         <a href="#" class="btn-trabajos">Ver trabajos</a>
       </div>
