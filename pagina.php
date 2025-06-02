@@ -201,11 +201,11 @@
       <a href="#" class="logo">INTI MUNAY</a>
       <ul class="nav-links">
         <li><a href="#">Inicio</a></li>
-        <li><a href="#">Cerámica</a></li>
+        <li><a href="ceramica.php">Cerámica</a></li>
         <li><a href="#">Textiles</a></li>
         <li><a href="#">Pinturas</a></li>
         <li><a href="#">Información</a></li>
-        <li><a href="#">Trabajos</a></li>
+        <li><a href="trabajos.php">Trabajos</a></li>
         <li><a href="login.php" class="login-btn">Iniciar sesión</a></li>
       </ul>
     </div>
@@ -228,7 +228,7 @@
         <img src="img/c.jpg" alt="Cerámica INTI MUNAY">
         <h3>Cerámica</h3>
         <p>Arte tradicional con diseños modernos, cada pieza cuenta una historia única.</p>
-        <a href="#" class="btn">Ver más</a>
+        <a href="ceramica.php" class="btn">Ver más</a>
       </div>
       
       <!-- Categoría Textiles -->
